@@ -54,7 +54,7 @@
   
 .fa-brands {
     display: inline;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: lighter;
 
 
@@ -88,11 +88,10 @@ body {
   max-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
 }
 
 main {
-  margin-top: 2rem;
   width: 90vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -101,11 +100,14 @@ main {
 .img__div{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 2rem;
   & .logo{
     width: 100%;
+    margin-bottom: 3rem;
   }
   & .logo  img {
+    margin-top: 7.5rem;
     width: 200px;
     margin-left: var(--margin25);
   }
@@ -124,7 +126,7 @@ main {
 }
 
 .text__div{
-  margin-top: 10rem;
+  margin-top: 24rem;
   padding: var(--padding30);
 }
 
@@ -165,7 +167,8 @@ main {
 
 
 .social__icons {
-  width: 200%;
+  margin-top: 6rem;
+  width: 160%;
   gap: 2rem;
   display: flex;
   flex-direction: row;
@@ -180,8 +183,16 @@ main {
   border: 1px solid white;
   border-radius: 50%;
   padding: var(--padding20);
-  
+  color: #ffff;
+   
 }
+
+.icon .fa-brands{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
 i:hover{
   color: var(--Soft-Magenta) !important;
   border-color: var(--Soft-Magenta);
@@ -189,17 +200,21 @@ i:hover{
 
   
 footer{
+  display: flex;
+  justify-content: center;
   font-family: var(--font-head);
   font-size: 1.5rem;
   font-weight: 900;
   letter-spacing: .2rem;
+  width: 100%;
+  height: auto;
 }
 
 /* media: DESDE ACÁ LAS MEDIA QUERIES */
 
 @media screen and (max-width:775px){
  main {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   width: 90%;
   display: grid;
   grid-template-columns: auto;
@@ -239,6 +254,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+main{
+  margin-top: -5rem;
+}
 .img__div{
   display: flex;
   flex-direction: column;
@@ -248,7 +267,7 @@ body {
   }
   & .logo  img {
     width: 150px;
-    margin-left: var(--margin15);
+    /* margin-left: var(--margin15); */
   }
 }
 
